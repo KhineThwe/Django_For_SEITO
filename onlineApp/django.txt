@@ -1,0 +1,37 @@
+Starting your web application with django
+---------------------------------------------
+1.check python with "python" command
+2.check pip verson with "pip --version" command
+3.install virtual environment wrapper with "pip install virtualenvwrapper-win"
+4.After installing virtual environment,we have to configure virtual env with "mkvirtualenv onlineVM" command
+instead of onlineVM,you can use other names whatever you want.And make sure you remember that env's name.
+5.As a fifth step,You have to install django in your virtual env with "pip install django"
+As a result,lightweight server will come as a built-in.
+6.In your virtual env,you have to create project folder and project file in your project file.
+7.To create project folder,"mkdir onlineProject".Instead of "onlineProject",you can also use other names as well.
+8.And go into your project folder with "cd onlineProject".
+9.And you can use "dir" command to list directories inside your project folder.
+10.To create project file,"django-admin startproject onlineApp",Here onlineApp is project file's name and you can use other names as well.
+11.And then "cd onlineApp" and "dir" command.You'll see "manage.py file,onlineApp folder" directories.
+12.And run "python manage.py runserver" command inside project directories.
+
+
+First Web App
+------------------------
+1.cd pjName ---> cd "onlineProject"
+2.cd onlineApp 
+3.To enable python virtual env -----> workon onlineVM
+4.To create another app or project file inside onlineVM ---> python manage.py startapp onlineSecondApp
+
+
+First Step
+----------------------------
+Inside onlineSecondApp
+1.create urls.py ----> and link like that ---> path('',views.home,name='home'),
+2.Inside views.py --> we'll write contents inside views.py
+3.And then onlineApp(urls) , need to modify
+like that ---> path('',include('onlineSecondApp.urls'))
+and import include beside path
+4.You have to import views.py inside urls.py with "from .import views"
+5.And run with ---> cd onlineApp ---> python manage.py runserver
+
