@@ -35,3 +35,20 @@ and import include beside path
 4.You have to import views.py inside urls.py with "from .import views"
 5.And run with ---> cd onlineApp ---> python manage.py runserver
 
+Second Step
+--------------------------------------------------
+ပြောင်းနေတဲ့ content တွေကို dynamic content or django template content language လို့ခေါ်တယ်
+မပြောင်းနေပဲ အသေရှိနေတဲ့ content တွေကိုကျ static content လို့ခေါ်တယ်
+Django Template language
+--------------------------
+1.Template folder တစ်ခုအား original App အတွင်းတွင် ---> onlineApp ဖန်တီးမည်။(templates)
+2.Template folder ထဲတွင် ကြိုက်နှစ်သက်ရာ name ဖြင့် html file တစ်ခုဖန်တီးမည်။
+ထို html file အား template file အဖြစ်အသုံးပြုမည်ဖြစ်သောကြောင့် ထို html tag ထဲတွင် 3name ဆိုသည့် variable
+ကိုရေးသားခဲ့မည်။ (<h1>Hello I am {{name}}</h1>)
+3.Settings.py ထဲတွင် templates folder path လမ်းကြောင်း ပေးမည်။ Line 55 lout mhar
+( 'DIRS': [os.path.join(BASE_DIR,'templates')],)
+4.Views.py ထဲတွင် HTTPresponse မှတစ်ဆင့် render method ပြောင်းမည်။ page များကို ဖော်ပြလိုတဲ့ အခါ တွင် render method 
+ကိုသုံးရသည်။
+5.Render method ထဲတွင် parameter 3 ခုပါမည်။ First parameter-->request,Second parameter---> html file name
+နှင့် third parameter--> မိမိတို့ဖော်ပြလိုသော dynamic content
+
