@@ -21,3 +21,9 @@ def about(request):
    except Exception as error:
         print(error)
         return render(request,'about.html',{'error':error})
+
+def add(request):
+    uname = request.GET['name'] 
+    uemail = request.GET['email'] 
+    upass = request.GET['password']
+    return render(request,'result.html',{'name':uname,'email':uemail,'password':upass})

@@ -6,4 +6,12 @@
 {%for key,value in data.items%}
 <li>{{key}} : {{value}}</li>
 {%endfor%}
+
+<form action="add" class="box">
+    <h1>User Information</h1>
+    <input type="text" name="name" placeholder="Username">
+    <input type="text" name="email" placeholder="Email Address">
+    <input type="text" name="password" placeholder="Password"><br>
+    <input type="submit" value="Upload">
+</form>
 {%endblock%}
