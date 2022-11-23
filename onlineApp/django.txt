@@ -52,3 +52,5 @@ Django Template language
 5.Render method ထဲတွင် parameter 3 ခုပါမည်။ First parameter-->request,Second parameter---> html file name
 နှင့် third parameter--> မိမိတို့ဖော်ပြလိုသော dynamic content
 
+views.py file ကနေပဲ html file တွေကို data လှမ်းထည့်ပေးတယ်လို့ မှတ်ရမယ်
+
