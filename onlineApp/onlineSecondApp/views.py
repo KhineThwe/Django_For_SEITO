@@ -23,7 +23,7 @@ def about(request):
         return render(request,'about.html',{'error':error})
 
 def add(request):
-    uname = request.GET['name'] 
-    uemail = request.GET['email'] 
-    upass = request.GET['password']
+    uname = request.POST['name'] 
+    uemail = request.POST['email'] 
+    upass = request.POST['password']
     return render(request,'result.html',{'name':uname,'email':uemail,'password':upass})

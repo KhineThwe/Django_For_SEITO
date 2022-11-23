@@ -60,3 +60,16 @@ Template Inheritance
 1.templates folder ကို settings ထဲမှာသွားပြီးမပေးထားမိရင် Inheritance ချိန်မှာ folder နာမည်ကို ခေါ်ပေးရမယ်---> 
 Eg: {%extends "templates/paraent.html"%}  
 2.ပေးထားပြီးဆိုရင် Eg: {%extends "paraent.html"%}
+
+
+GET AND POST
+--------------------
+#GET,POST,HEAD,DELETE,PUT,CONNECT,OPTIONS,TRACE
+GET က browser history မှာ storeတယ် မြင်ရတယ်
+POST ကပြောင်းပြန်
+
+Post သုံးမယ်ဆိုရင် CSRF verification fail ဖြစ်တတ်တယ်
+client ကနေ ထည့်ပေးလိုက်တဲ့ ထဲမှာ malicious code တွေ attack လုပ်မဲ့ code တွေ မဝင်လာအောင် form ထဲမှာ csrf token
+ထည့်ရမယ် အာ့ကျမှ token လေးနဲ့ ဟိုဘက်ဒီဘက်ချိတ်သွားပေးမှာ
+
+form အောက်မှာ   {%csrf_token%} လို့ထည့်ပေးရမယ်
