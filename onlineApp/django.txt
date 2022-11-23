@@ -54,3 +54,9 @@ Django Template language
 
 views.py file ကနေပဲ html file တွေကို data လှမ်းထည့်ပေးတယ်လို့ မှတ်ရမယ်
 
+
+Template Inheritance
+--------------------------------
+1.templates folder ကို settings ထဲမှာသွားပြီးမပေးထားမိရင် Inheritance ချိန်မှာ folder နာမည်ကို ခေါ်ပေးရမယ်---> 
+Eg: {%extends "templates/paraent.html"%}  
+2.ပေးထားပြီးဆိုရင် Eg: {%extends "paraent.html"%}

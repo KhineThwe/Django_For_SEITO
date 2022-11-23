@@ -1,1 +1,9 @@
-<h1>About Page {{data}}</h1>
+{%extends "parent.html"%}
+
+{%block title%}Template{%endblock%}
+
+{%block content%}
+{%for key,value in data.items%}
+<li>{{key}} : {{value}}</li>
+{%endfor%}
+{%endblock%}
